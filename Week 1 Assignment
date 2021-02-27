@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Zoo</title>
+</head>
+  <body>
+	<style>
+	  body{
+	    font-size:20px;
+	    margin: 0px;
+	    background-color: #F5F5DC;
+	  }
+
+	  nav{
+	    display: flex;
+	  }
+
+	  nav>.myzoo{
+	    flex: auto;
+	    margin: 10px;
+	    align-items:center;
+	  }
+
+	  nav>.menu{
+	    flex: none;
+	    margin: 10px;
+	  }
+
+	  nav>.hamburger{
+	    flex: none;
+	    width: 40px;
+	    margin: 10px;
+	    display: none;
+	  }
+
+	  .head{
+	    font-size: 40px;
+	    font-weight: bold;
+	    text-align: center;
+	    justify-content: center;
+	    alien-items: center;
+	    margin-bottom: 20px;
+	    height: 300px;
+	    line-height: 300px;
+	    background-color: #F9966B;
+	  }
+
+	  .content{
+	    width: 1200px;
+	    margin-left:auto;
+	    margin-right:auto;
+
+	  }
+
+
+	  main{
+	    display:flex;
+	    flex-wrap:wrap;
+	    justify-content: center;
+	    align-items: center;
+	    text-align: center;
+
+	  }
+
+	  main>.box{
+	    flex: none;
+	    width: 270px;
+	    margin: 5px;
+	    padding: 5px;
+	    background-color: #F9966B;
+
+	  }
+
+	  .image-size{
+	    width: 100%;
+	    height: 200px;
+	    position: relative;
+	  }
+
+	  @media (max-width:1200px){
+	    .content{
+		width: 601px;
+	    }
+	    main>.box{
+		width: 45%;
+	    }
+	    nav>.menu{
+		display: block;
+	    }
+	    nav>.hamburger{
+		display: none;
+	    }
+	  }
+
+	  @media (max-width:600px){
+
+	    .content{
+		width: 300px;
+	    }
+	    main>.box{
+		width: 100%;
+	    }
+	    nav>.menu{
+		display: none;
+	    }
+	    nav>.hamburger{
+		display: block;
+	    }
+	  }
+
+	</style>
+	
+	  	  
+	<nav>
+	  <div class="myzoo">MyZoo</div>
+	  <div class="menu">Item1</div>
+	  <div class="menu">Item2</div>
+	  <div class="menu">Item3</div>
+	  <div class="menu">Item4</div>
+	  <div class="hamburger"><img src="menuicon.jpg"></div>
+	</nav>	
+
+	<div class="head">Welcome to MyZoo</div>
+
+	<div class="content">
+	  <main>
+	    <div class="box"><img class="image-size" src="dog.jpg"><br>Dog</br></div>
+	    <div class="box"><img class="image-size" src="hippo.jpg"><br>Hippo</br></div> 
+	    <div class="box"><img class="image-size" src="jaguar.jpg"><br>Jaguar</br></div>
+	    <div class="box"><img class="image-size" src="elephant.jpg"><br>Elephant</br></div>
+	    <div class="box"><img class="image-size" src="giraffe.jpg"><br>Giraffe</br></div>
+	    <div class="box"><img class="image-size" src="zebra.jpg"><br>Zebra</br></div>
+	    <div class="box"><img class="image-size" src="lion.jpg"><br>Lion</br></div>
+	    <div class="box"><img class="image-size" src="raccoon.jpg"><br>Raccoon</br></div>
+	  </main>
+	</div>
+
+
+
+  </body>
+</html>
